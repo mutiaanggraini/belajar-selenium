@@ -94,7 +94,7 @@ class DemowebshopTest(unittest.TestCase):
         confirmation_message = browser.find_element(By.CLASS_NAME, 'title').text
         self.assertIn('Your order has been successfully processed!', confirmation_message)
 
-    def test_6_add_to_cart_and_checkout_negative_empty_Recipient_data(self):
+    def test_6_add_to_cart_and_checkout_negative(self):
         browser = self.browser
         browser.get('https://demowebshop.tricentis.com/login')
 
